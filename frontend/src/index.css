@@ -1,0 +1,112 @@
+/* src/index.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Контейнер для страниц логина и регистрации */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh; /* чтобы быть по центру по вертикали, но карточка не растянется */
+}
+
+/* Карточка с ФИКСИРОВАННЫМИ размерами */
+.auth-card {
+  width: 400px !important;        /* фиксированная ширина */
+  height: 520px !important;       /* фиксированная высота */
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Заголовок карточки */
+.auth-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 24px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.auth-card .ant-card-head-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #111827;
+}
+
+/* Тело карточки — занимает оставшееся место */
+.auth-card .ant-card-body {
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Форма занимает всю высоту */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.auth-form .ant-form-item:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Растягиваем поля и кнопку */
+.auth-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.auth-form .ant-input-affix-wrapper {
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  width: 100%;
+}
+
+.auth-form .ant-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  background: #2563eb;
+  border: none;
+  margin-top: auto; /* прижимаем кнопку к низу, если нужно */
+}
+
+/* Ссылка под формой */
+.auth-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.auth-link a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Адаптив: на маленьких экранах уменьшаем карточку */
+@media (max-width: 480px) {
+  .auth-card {
+    width: 340px !important;
+    height: 500px !important;
+  }
+}

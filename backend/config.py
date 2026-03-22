@@ -1,0 +1,7 @@
+import secrets
+
+SECRET_KEY = secrets.token_urlsafe(32)  # в проде надо хранить в переменных окружения
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+DATABASE_URL = "sqlite:///./subscriptions.db"
