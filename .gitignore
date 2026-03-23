@@ -1,24 +1,15 @@
-# Python
+# Backend
 __pycache__/
-*.py[cod]
-*.so
-.Python
-env/
-venv/
-.venv/
-*.db
-*.sqlite3
+*.pyc
+.env
+subscriptions.db
+backend/.env
 
-# Node / Frontend / Mobile
-node_modules/
-dist/
-build/
-.expo/
-.expo-shared/
-*.log
-.DS_Store
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
 
-# IDE
-.vscode/
-.idea/
-*.swp
+# Mobile
+mobile/node_modules/
+mobile/.env
