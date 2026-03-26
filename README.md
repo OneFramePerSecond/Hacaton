@@ -36,3 +36,4 @@
 
 ## Ссылки
 - Репозиторий: https://github.com/OneFramePerSecond/Hacaton
+- Видео обзор: https://drive.google.com/file/d/1RRCATGGd4jNS6INXkgbd3G5-uFuZSlmq/view?usp=drive_link
